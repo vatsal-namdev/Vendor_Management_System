@@ -37,11 +37,6 @@ class VendorAPITestCase(TestCase):
         response = self.client.delete(url)
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
-    # def test_vendor_performance_api(self):
-    #     url = reverse('vendor-performance', kwargs={'pk': self.vendor.pk})
-    #     response = self.client.get(url)
-    #     print(response.content)
-    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
 
 class PurchaseOrderAPITestCase(TestCase):
     def setUp(self):
